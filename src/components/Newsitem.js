@@ -24,8 +24,9 @@ export class Newsitem extends Component {
             <hr />
 
             <p className="card-text">
-              By {author} on {new Date(date).getDate()}/
-              {new Date(date).getMonth() + 1}/{new Date(date).getFullYear()}
+              By {!author ? "BitterTruth" : author} on{" "}
+              {new Date(date).getDate() + 1}/{new Date(date).getMonth() + 1}/
+              {new Date(date).getFullYear()}
             </p>
             <a
               href={newsUrl}
